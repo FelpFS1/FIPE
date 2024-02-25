@@ -6,4 +6,4 @@ type QuerysContextType = {
     setFipeLoading:React.Dispatch<SetStateAction<boolean>>
     
 }
-export const QuerysContext = createContext<QuerysContextType>()
+export const QuerysContext = createContext<QuerysContextType>(null)

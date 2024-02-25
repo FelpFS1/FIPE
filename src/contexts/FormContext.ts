@@ -16,4 +16,4 @@ type FormContextType = {
     setValueIdModel:React.Dispatch<SetStateAction<string>>,
     setValueIdYear:React.Dispatch<SetStateAction<string>>
 }
-export const FormContext = createContext<FormContextType>()
+export const FormContext = createContext<FormContextType>(null)
