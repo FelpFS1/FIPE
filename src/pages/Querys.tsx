@@ -22,8 +22,8 @@ export default function Querys(){
             
             className="w-screen">
                 <section>
-                    <div className="w-4/6 text-center m-auto ">
-                        <h2 className="font-bold mb-5 lg:text-3xl lg:mb-10">Selecione qual tipo de veiculo você deseja consultar</h2>
+                    <div className="text-center m-auto lg:w-4/6 ">
+                        <h2 className="font-bold mb-1 lg:text-3xl lg:mb-5">Selecione qual tipo de veiculo você deseja consultar</h2>
                     </div>
                     <div>
                         <Form />
@@ -35,7 +35,7 @@ export default function Querys(){
                         animate={{opacity:1}}
                         transition={{duration:2}}
                     className=" my-5 flex justify-center">
-                        <div className="w-4/5 bg-slate-100 p-5 text-sm sm:text-lg text-left font-bold rounded-2xl">
+                        <div className="w-4/5 bg-slate-100 p-2 md:p-5 text-sm md:text-sm sm:text-lg text-left font-bold rounded-2xl">
                         <h3 className="text-center mb-2">Dados do seu veiculo</h3>
                         {
                             dataFipeVehicle.map(dataVehicle => 
