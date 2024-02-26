@@ -4,7 +4,7 @@ import { QuerysContext } from "../contexts/QuerysContext";
 import {  useState } from "react";
 import { fipeType } from "../types/Fipetype";
 import Footer from "../components/Footer";
-
+import { motion } from "framer-motion";
 
 
 export default function Querys(){
@@ -15,7 +15,12 @@ export default function Querys(){
     return(
         <QuerysContext.Provider value={{setDataFipeVehicle,setFipeLoading}}>
             <Header/>
-            <main className="w-screen">
+            <motion.main 
+            initial={{x: -200}}
+            animate={{x:0}}
+
+            
+            className="w-screen">
                 <section>
                     <div className="w-4/6 text-center m-auto ">
                         <h2 className="font-bold mb-5 lg:text-3xl lg:mb-10">Selecione qual tipo de veiculo você deseja consultar</h2>
@@ -25,7 +30,11 @@ export default function Querys(){
                     </div>
                 </section>
                 {fipeLoading &&
-                    (<section className=" my-5 flex justify-center">
+                    (<motion.section 
+                        initial={{opacity:0}}
+                        animate={{opacity:1}}
+                        transition={{duration:2}}
+                    className=" my-5 flex justify-center">
                         <div className="w-4/5 bg-slate-100 p-5 text-sm sm:text-lg text-left font-bold rounded-2xl">
                         <h3 className="text-center mb-2">Dados do seu veiculo</h3>
                         {
@@ -42,10 +51,10 @@ export default function Querys(){
                         }
                                 
                         </div>
-                    </section>)
+                    </motion.section>)
                 }
                 
-            </main>
+            </motion.main>
             <Footer/>
         </QuerysContext.Provider>
 

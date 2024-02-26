@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useContext, useEffect} from "react"
 import { FormContext } from "../contexts/FormContext"
+import { motion } from "framer-motion"
 
 
 export default function SelectYear({children}:{children:React.ReactNode}) {
@@ -12,13 +13,16 @@ export default function SelectYear({children}:{children:React.ReactNode}) {
     },[valueIdYear])
     return (
         <>
-            <select className='bg-slate-100 w-10/12 p-3 font-bold text-neutral-600 rounded-xl'
+            <motion.select 
+             initial={{width: '0%'}}
+             animate={{width:"80%"}}
+            className='bg-slate-100 w-10/12 p-3 font-bold text-neutral-600 rounded-xl'
                 name="sele"
                 id=""
                 value={valueIdYear}
                 onChange={currentValue => setValueIdYear(currentValue.target.value)}>
                 {children}
-            </select>
+            </motion.select>
         
         </>
     )

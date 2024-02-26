@@ -59,7 +59,7 @@ export default function Form() {
     async function getFipeVehicle(e:{ preventDefault: ()=> void } ) {
         e.preventDefault()
         const data = await getDataVehicle(radioValue,valueIdBrand,valueIdModel,valueIdYear)
-        setDataFipeVehicle(state => [...state,data])
+        setDataFipeVehicle([data])
         setFipeLoading(true)
         
     }
