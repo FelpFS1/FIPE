@@ -4,7 +4,7 @@ Projeto feito para colocar em pratica tudo que aprendi e estou aprendendo em Rea
 ## Preview GIF:
 
 <div align="center">
-<img src="https://github.com/FelpFS1/FIPE/assets/97350613/fa2abea0-6c4e-4da7-b90b-0c3b8568ee4d" width="700px" />
+<img src="https://github.com/FelpFS1/FIPE/assets/97350613/cdcf3ecc-e9b5-4179-8feb-a5c12f65dfa2" width="700px" />
 </div>
 
 ## Link para acessar a aplicação:
