@@ -15,6 +15,7 @@ export default function SelectModel({children}:{children:React.ReactNode}) {
             <motion.select 
              initial={{width: '0%'}}
              animate={{width:"80%"}}
+             transition={{duration:0.3}}
              
             className='bg-slate-100 w-10/12 p-3 font-bold text-neutral-600 rounded-xl'
                 name="model"

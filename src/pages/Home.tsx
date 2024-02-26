@@ -12,8 +12,8 @@ export default function Home(){
             <>
                 <Header/>
                 <motion.main 
-                 initial={{x: -200}}
-                 animate={{x:0}}
+                 transition={{duration:1}}
+                 exit={{x:window.innerWidth}}
                  >
                     <section className="w-screen p-3 text-center ">
                     <h2 className="font-semibold text-3xl lg:text-4xl">Está procurando um lugar para consultar a <span className="text-red-600">FIPE</span> do seu veículo?</h2>

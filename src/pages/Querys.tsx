@@ -16,9 +16,9 @@ export default function Querys(){
         <QuerysContext.Provider value={{setDataFipeVehicle,setFipeLoading}}>
             <Header/>
             <motion.main 
-            initial={{x: -200}}
-            animate={{x:0}}
-
+            initial={{x: -500,opacity:0}}
+            animate={{x:0,opacity:1}}
+            transition={{duration:1}}
             
             className="w-screen">
                 <section>
