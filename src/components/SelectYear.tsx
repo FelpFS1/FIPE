@@ -1,5 +1,4 @@
-/*eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import React, { useContext, useEffect} from "react"
 import { FormContext } from "../contexts/FormContext"
 import { motion } from "framer-motion"
@@ -10,7 +9,7 @@ export default function SelectYear({children}:{children:React.ReactNode}) {
     useEffect(() => {
         setValueIdYear(valueIdYear)
       
-    },[valueIdYear])
+    },[setValueIdYear, valueIdYear])
     return (
         <>
             <motion.select 

@@ -1,5 +1,4 @@
 
-
 type CardProps ={
     text:string,
     svg:string,
