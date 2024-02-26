@@ -7,6 +7,9 @@ Projeto feito para colocar em pratica tudo que aprendi e estou aprendendo em Rea
 <img src="https://github.com/FelpFS1/FIPE/assets/97350613/fa2abea0-6c4e-4da7-b90b-0c3b8568ee4d" width="700px" />
 </div>
 
+## Link para acessar a aplicação:
+ - <a href='https://fipecar.vercel.app'>Clique para acessar</a>
+
 ## Principais funcionalidades:
   - Buscar a FIPE atualizada de um veículo
   - Veículos que podem ser consultados:
