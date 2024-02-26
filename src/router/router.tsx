@@ -1,16 +1,13 @@
-import { createBrowserRouter } from "react-router-dom";
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from "../pages/Home";
 import Querys from "../pages/Querys";
 
-const router = createBrowserRouter([
-    {
-        path:'/',
-        element: <Home/>
-    },
-    {
-        path:'/querys',
-        element:<Querys/>
-    }
-])
-
+const router = (
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/querys" element={<Querys />} />
+      </Routes>
+    </HashRouter>
+  );
 export default router
